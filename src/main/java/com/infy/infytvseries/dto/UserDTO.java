@@ -12,7 +12,7 @@ public class UserDTO {
 	@Pattern(regexp = "[A-Z][a-z]+(\\s[A-Z][a-z]+)*", message = "{user.name.invalid}")  
 	private String userName;
 	@NotNull(message = "{user.email.notpresent}")
-	@Pattern(regexp = "[A]+@(gmail|infy)[.](com)",message = "{user.email.invalid}")
+	@Pattern(regexp = "[A-Za-z0-9]+@(gmail|infy)[.](com)",message = "{user.email.invalid}")
 	private String email;
 	@NotNull(message = "{user.regdate.notpresent}")
 	private LocalDate regDate;
